@@ -1,0 +1,11 @@
+.back-image{
+    background-image: url(/assets/images/back02.svg);
+    background-position: 100% 90%;
+    background-repeat: no-repeat;
+}
+
+@media (min-height: 820px) {
+    .position {
+        top: 30rem;
+    }
+}

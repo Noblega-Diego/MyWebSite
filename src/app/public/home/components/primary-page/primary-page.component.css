@@ -1,0 +1,9 @@
+.bg-primary{
+    background: radial-gradient(53.65% 92.02% at 100% 0%, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.6) 45.31%, #F8F8F8 100%);;
+}
+
+@media (prefers-color-scheme: dark){
+    .bg-primary{
+        background: radial-gradient(60.65% 90.02% at 100% 0%, rgba(24, 26, 30, 0.15) 0%, rgba(24, 26, 30, 0.514) 45.31%, #191C25 100%);
+    }
+}

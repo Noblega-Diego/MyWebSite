@@ -1,0 +1,25 @@
+.efect-show-down{
+    animation: show-down 500ms ;
+}
+
+.efect-up{
+    animation: show-down 500ms reverse;
+}
+
+@keyframes show-down{
+    0%{
+        transform: translateY(-50%);
+        opacity: 0;
+        visibility: hidden;
+        display: none;
+    }
+    1%{
+        visibility: visible;
+        display: inherit;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+        display: inherit;
+    }
+}

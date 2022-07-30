@@ -1,0 +1,24 @@
+<div
+  class="my-4 md:m-4 rounded md:w-48 xl:w-60 flex items-center justify-center text-center bg-left bg-[length:50%] md:bg-cover md:bg-center"
+  [ngClass]="{
+    'hover:bg-panel-vertical-black-01 dark:hover:bg-panel-vertical-write-01': selectedOption == 0,
+    'bg-panel-vertical-write-01 dark:bg-panel-vertical-black-01': selectedOption == 0,
+    'hover:bg-panel-vertical-black-02 dark:hover:bg-panel-vertical-write-02': selectedOption == 1,
+    'bg-panel-vertical-write-02 dark:bg-panel-vertical-black-02': selectedOption == 1,
+    'hover:bg-panel-vertical-black-03 dark:hover:bg-panel-vertical-write-03': selectedOption == 2,
+    'bg-panel-vertical-write-03 dark:bg-panel-vertical-black-03': selectedOption == 2,
+    'bg-white dark:bg-[#191C25]': true,
+    'hover:bg-[#3166ED] dark:hover:bg-[#fff]': true,
+    'dark:text-white-primary': true,
+    'hover:text-white dark:hover:text-[#191C25]': true
+  }"
+  style="
+    background-repeat: no-repeat;
+    height: 94%;
+    min-height: 120px;
+  "
+>
+  <p class="text-4xl md:text-7xl xl:text-8xl font-light uppercase md:break-all">
+    {{options[selectedOption.valueOf()].content}}
+  </p>
+</div>

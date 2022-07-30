@@ -1,0 +1,12 @@
+<div class="xl:p-14 flex flex-col w-full bg-white bg-back-certificates bg-right bg-no-repeat rounded-xl" style="background-position-y: -20px; background-size: 200px;">
+    <div class="text-4xl md:text-5xl uppercase font-light mx-5 mt-4">
+        <h2 class=""><span class="text-[#3166ED] ">my </span>certificates</h2>
+        <div class="h-0.5 bg-[#3166ED]"></div>
+    </div>
+    <section class="flex flex-wrap m-5 justify-center md:justify-between">
+        <!--card certificates-->
+        <div *ngFor="let certificado of certificados" class="w-full md:w-3/6 max-w-sm ">
+            <app-certificate-card  [title]="certificado.name" [imageUrl]="certificado.imageUrl" [date]="certificado.date"></app-certificate-card>
+        </div>
+    </section>
+</div>

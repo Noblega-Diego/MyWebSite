@@ -1,0 +1,15 @@
+<form class="w-full">
+    <div class="flex flex-col mt-2 w-full">
+        <label class="uppercase font-light">name</label>
+        <input type="text" class="ring-gray-300 focus:ring-gray-500 border-2 rounded p-2 text-sky-700 w-full" [(ngModel)]="name" >
+    </div>
+    <div class="flex flex-col mt-2 w-full">
+        <label class="uppercase font-light">subject</label>
+        <input type="text" class="ring-gray-300 focus:ring-gray-500 border-2 rounded p-2 w-full" [(ngModel)]="name" >
+    </div>
+    <div class="flex flex-col mt-2 w-full">
+        <label class="uppercase font-light">content</label>
+        <textarea type="text" rows="4" class="ring-gray-300 focus:ring-gray-500 border-2 rounded p-2 w-full" [(ngModel)]="name" ></textarea>
+    </div>
+    <button class="py-2 px-6 border-2 border-[#3166ED] text-[#3166ED] rounded-md float-right mt-4 uppercase bg-send bg-no-repeat bg-[center_right_1.2rem] pr-14">Send</button>
+</form>
